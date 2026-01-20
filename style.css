@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a6b4f1;
+    color: #102942;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    text-align: center;
+    background-color: #f7f7f8e5;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px -1px #91beeb;
+    margin: 20px;
+}
+
+/* =========================
+   MAIN (CONTAINER)
+========================= */ /*(flexbox organizar os elementos, controlando quem fica do lado ou espaço ocupado)*/
+main {
+    max-width: 900px;   /* ajusta o layout principal*/
+    margin: 40px auto;
+    padding: 80px;          
+    background-color: #ffffff;
+    border-radius: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+/* =========================
+   SEÇÕES GERAIS
+========================= */
+section {
+    background-color: #fffdf8; /* ajusta dentro da área principal */
+    padding: 20px;  
+    border-radius: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    width: 100%;
+    text-align: center;
+}
+
+/* =========================
+   LAYOUT DO PLANNER
+========================= */
+.notes,
+/* Notas- Anotações */
+.notas {
+    width: calc(20% - 10px);
+}
+/* Agenda */
+.agenda {
+    width: calc(40% - 10px);
+}
+/* Planner */
+.planner {
+    width: calc(100% - 10px);
+}
+/* Calendário*/
+.calendario {
+    width: calc(25% - 10px);
+}
+
+/* =========================
+   EFEITO PAPEL (LINHAS)
+========================= */
+.notes,
+.planner {
+    background-image: repeating-linear-gradient(
+        to bottom,
+        #fffdf8,
+        #fffdf8 30px,
+        #e9e5dc 31px
+    );
+    line-height: 30px;
+}
+
+/* =========================
+   MARGEM DE CADERNO
+========================= */
+.notes {
+    position: relative;
+    padding-left: 44px;
+}
+
+.notes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22px;
+    width: 2px;
+    height: 100%;
+    background-color: #d6a2a2;
+}
+
+/* =========================
+   ALTURA CONFORTÁVEL
+========================= */
+.notes,
+.agenda,
+.calendario,
+.planner {
+    min-height: 220px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+}
