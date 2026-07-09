@@ -1,5 +1,5 @@
 # Web Planner 📝 (Em desenvolvimento)
-Personal web planner project built with HTML, CSS and JavaScript
+Personal web planner project built with HTML and CSS
 
 ## Sobre o projeto
 Este projeto é um **Web Planner** desenvolvido como parte do meu portfólio.  
