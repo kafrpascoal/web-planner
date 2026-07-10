@@ -1,4 +1,4 @@
-# Web Planner 📝 (Em desenvolvimento)
+# Web Planner 📝
 Personal web planner project built with HTML and CSS
 
 ## Sobre o projeto
